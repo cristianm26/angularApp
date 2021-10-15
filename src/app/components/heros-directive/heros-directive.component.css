@@ -1,0 +1,52 @@
+*,
+*:focus,
+*:hover {
+	outline: none;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	width: 25em;
+}
+.container button {
+	width: 8em;
+	background: #7749f8;
+	border-radius: 4px;
+	height: 39px;
+	color: white;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}
+.container .cambiar-color {
+	background-color: red;
+}
+.container .cambiar-color-label {
+	color: green;
+}
+.container input {
+	border: 1px solid #ced4da;
+	box-sizing: border-box;
+	border-radius: 4px;
+	height: 38px;
+}
+.container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.container table tr:first-child td {
+	font-weight: bold;
+}
+.container td,
+.container th {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 8px;
+}
+.container td:nth-child(1) {
+	font-weight: bold;
+}
+.container tr:nth-child(even) {
+	background-color: #f8f9fa;
+}

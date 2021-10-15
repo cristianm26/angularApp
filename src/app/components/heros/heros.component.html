@@ -1,0 +1,61 @@
+<div class="container">
+	<h1>Registro de Heroes</h1>
+	<input type="text" [(ngModel)]="titulo" />
+	<!-- 	<app-my-component3 [titulo]="titulo"></app-my-component3> -->
+	<label for="" [ngClass]="{ '.cambiar-color-label': miNgClass }"> Probando NgClass</label>
+	<button>Guardar</button>
+
+	<h3>Pipes</h3>
+	<table>
+		<tr>
+			<td>pipe</td>
+			<td>value</td>
+			<td>result</td>
+		</tr>
+		<tr>
+			<td>Uppercase</td>
+			<td>{{ titulo }}</td>
+			<td>{{ titulo | uppercase }}</td>
+		</tr>
+		<tr>
+			<td>Lowercase</td>
+			<td>{{ titulo }}</td>
+			<td>{{ titulo | lowercase }}</td>
+		</tr>
+		<tr>
+			<td>Slice Simple</td>
+			<td>{{ titulo }}</td>
+			<td>{{ titulo | slice: 5 }}</td>
+		</tr>
+		<tr>
+			<td>Slice con dos parámetros valor final negativo</td>
+			<td>{{ titulo }}</td>
+			<td>{{ titulo | slice: 0:-2 }}</td>
+		</tr>
+		<tr>
+			<td>Decimal</td>
+			<td>{{ decimalPrueba }}</td>
+			<td>{{ decimalPrueba | number: '.2-2' }}</td>
+		</tr>
+		<tr>
+			<td>Porcentaje</td>
+			<td>{{ decimalPrueba }}</td>
+			<td>{{ decimalPrueba | percent: '1.2-2' }}</td>
+		</tr>
+		<tr>
+			<td>Currency</td>
+			<td>{{ currencyNumber }}</td>
+			<td>{{ currencyNumber | currency }}</td>
+		</tr>
+		<tr>
+			<td>Date</td>
+			<td>{{ miDate }}</td>
+			<td>{{ miDate | date }}</td>
+		</tr>
+		<tr>
+			<td>Custom Currency</td>
+			<td>{{ currencyNumber }}</td>
+			<td>{{ currencyNumber | customCurrency: '.2-2' }}</td>
+		</tr>
+	</table>
+</div>

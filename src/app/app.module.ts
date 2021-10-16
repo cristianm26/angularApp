@@ -4,11 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyComponentsModule } from './components/my-components.module';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { CardTvModule } from './components/card-tv/card-tv.module';
 
 @NgModule({
 	declarations: [AppComponent],
-	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MyComponentsModule],
+	imports: [
+		BrowserModule,
+		BrowserAnimationsModule,
+		AppRoutingModule,
+		CardTvModule,
+		MatButtonModule,
+		MatIconModule,
+		MatBadgeModule
+	],
 	providers: [],
 	bootstrap: [AppComponent]
 })

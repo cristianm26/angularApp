@@ -7,9 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './pages/auth/auth.module';
 // Componentes
 import { AppComponent } from './app.component';
+import { AuthComponent } from './commons/services/auth/auth.component';
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent, AuthComponent],
 	imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule, AppRoutingModule, AuthModule],
 	providers: [],
 	bootstrap: [AppComponent]

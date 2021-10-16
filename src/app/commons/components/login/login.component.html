@@ -5,7 +5,7 @@
 	<form class="container__form" #myFormLogin="ngForm">
 		<mat-form-field appearance="outline">
 			<mat-label>User Name</mat-label>
-			<input matInput placeholder="Placeholder" name="username" required />
+			<input matInput placeholder="Placeholder" name="username" [(ngModel)]="userName" required />
 			<mat-icon class="material-icons-outlined" matSuffix>account_circle_outline</mat-icon>
 			<mat-error> El usuario es requerido </mat-error>
 		</mat-form-field>

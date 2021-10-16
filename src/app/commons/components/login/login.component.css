@@ -1,0 +1,16 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+.container img {
+	width: 20em;
+}
+.container__form {
+	display: flex;
+	flex-direction: column;
+}
+.container .registrate {
+	color: #007acc;
+	font-size: 18px;
+	cursor: pointer;
+}

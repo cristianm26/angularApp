@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BadgeService } from './common/services/badge.service';
 
 @Component({
 	selector: 'app-root',
@@ -8,14 +7,8 @@ import { BadgeService } from './common/services/badge.service';
 })
 export class AppComponent implements OnInit {
 	title = 'angularapp';
-	countTv = 0;
-	constructor(private badgeService: BadgeService) {}
 
-	ngOnInit(): void {
-		this.badgeService.chanelBadge.subscribe((data) => {
-			if (data) {
-				this.countTv++;
-			}
-		});
-	}
+	constructor() {}
+
+	ngOnInit(): void {}
 }
